@@ -16,4 +16,4 @@ color ("yellow") translate ([25, 0, 0]) piulita(14, 2, 4);
 
 color("blue") translate ([50, 0, 0]) rotate([90, 0, 0]) piulita(6, 4, 6);
 translate([0, 0, 10]) piulita_M4();
-translate([0, 0, -20]) piulita_M4();
+translate([2, 0, -20]) rotate([90,0,0]) piulita_M4();
