@@ -7,8 +7,13 @@ module piulita(raza_exterior, raza_interior, grosime)
     }
 }
 
-
+module piulita_M4()
+{
+    piulita(3.5, 2, 4);
+}
 color ("red") piulita(10, 4, 4);
 color ("yellow") translate ([25, 0, 0]) piulita(14, 2, 4);
 
 color("blue") translate ([50, 0, 0]) rotate([90, 0, 0]) piulita(6, 4, 6);
+translate([0, 0, 10]) piulita_M4();
+translate([0, 0, -20]) piulita_M4();
