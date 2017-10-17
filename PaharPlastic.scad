@@ -9,4 +9,5 @@ module pahar_plastic(inaltime_pahar,raza_baza_pahar,raza_sus_pahar,raza_buza,ina
    }
 }
  
+     
 pahar_plastic(inaltime_pahar=60,raza_baza_pahar=15,raza_sus_pahar=30,raza_buza=32,inaltime_buza=2,grosime_perete=1);
