@@ -40,8 +40,8 @@ for(i=[0:numar_pahare-1])
     }
 module pahare_matrice(numar_pahare_x,numar_pahare_y)
 { 
-for(j=[0:numar_pahare_y-1])   
-    translate([0,j*(50*2 + 3),0]) pahare_sir(numar_pahare_x);
+for(i=[0:numar_pahare_y-1])   
+    translate([0,i*(50*2 + 3),0]) pahare_sir(numar_pahare_x);
 
     }
     
