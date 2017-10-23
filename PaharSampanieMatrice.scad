@@ -38,10 +38,12 @@ for(i=[0:numar_pahare-1])
         translate([i*(50*2 + 3),0,0]) pahar_sampanie(raza_baza=40,grosime_baza=3,raza_picior=2,inaltime_picior=100,raza_cupa=50,            grosime_perete_cupa=2);
 
     }
-module pahare_matrice(numar_pahare)
+module pahare_matrice(numar_pahare_x,numar_pahare_y)
 { 
-for(j=[0:numar_pahare-1])   
-    translate([0,j*(50*2 + 3),0]) pahare_sir(numar_pahare);
+for(j=[0:numar_pahare_y-1])   
+    translate([0,j*(50*2 + 3),0]) pahare_sir(numar_pahare_x);
 
     }
-pahare_matrice(10);
+    
+    
+pahare_matrice(10,5);
