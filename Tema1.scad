@@ -54,12 +54,12 @@ module ciubar(h_ciub,r_M_ciub,r_m_ciub,h_maner,gro_ciub,r_inelM_maner,r_inelm_ma
   //------------Unesc baza ciubarului cu buza lui 
     }
 //#######################de predat 
-   // union(){ //  verificare 1
+   //resize([7,5,1]) union(){ //  verificare 1
    // difference(){  //  verificare 2
    // intersection(){ //  verificare 3
-    ciubar(h_ciub=2,r_M_ciub=2.1,r_m_ciub=1.5,h_maner=0.5,gro_ciub=0.2,r_inelM_maner=0.5,r_inelm_maner=0.3,rez=100);
-    translate([0,7/2,2.6]) rotate([90,0,0]) bat_cu_bile(lungime_bat=7,raza_bat=0.2,raza_bila=0.5,rezolutie=100);
-   // }
+    ciubar(h_ciub=2,r_M_ciub=2.1,r_m_ciub=1.5,h_maner=0.5,gro_ciub=0.2,r_inelM_maner=0.5,r_inelm_maner=0.3,rez=20);
+    translate([0,7/2,2.6]) rotate([90,0,0]) bat_cu_bile(lungime_bat=7,raza_bat=0.2,raza_bila=0.5,rezolutie=20);
+   //}
  //h ciubar+h maner + r gaura maner - r bat = pozitia de atingere maner cu bat
  //########## end de predat############
     
