@@ -203,7 +203,7 @@ module poly_path3748(h)
   }
 }
 //intersection(){
-scale(0.4,0.4,0.2) union(){
+translate([0,0,-0.4]) scale(0.4,0.4,0.2) union(){
 poly_path3746(5);
 poly_path3744(5);
 poly_path3740(5);
