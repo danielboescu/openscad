@@ -16,7 +16,8 @@ module baza_pahar(raza_baza,grosime_baza)
 
 module picior_pahar(raza_picior,inaltime_picior)
 {
-    cylinder(h=inaltime_picior,r=raza_picior);
+    linear_extrude(height = inaltime_picior, twist = 180,slices=100) square([2*raza_picior,2*raza_picior],center=true);
+    //cylinder(h=inaltime_picior,r=raza_picior,$fn=4);
 }//end picior_pahar
 
 //------------------------------
@@ -44,6 +45,18 @@ for(i=[0:numar_pahare_y-1])
     translate([0,i*(50*2 + 3),0]) pahare_sir(numar_pahare_x);
 
     }
+   
+module pahare_pe_cerc(nr_pahare,raza_cerc)
+   {
+       for(i=[0:nr_pahare-1]){
+       rotate([0,0,i*(360/nr_pahare)])
+       translate([raza_cerc,0,0])
+       pahar_sampanie(raza_baza=40,grosime_baza=3,raza_picior=2,inaltime_picior=100,raza_cupa=50,            grosime_perete_cupa=2);
+       }
+       
+   } 
     
-    
-pahare_matrice(10,5);
+//pahare_matrice(1,1);
+pahare_pe_cerc(nr_pahare=10,raza_cerc=200);
+   
+   
