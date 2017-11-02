@@ -62,7 +62,22 @@ module pahare_pe_cerc(nr_pahare,raza_cerc)
        
    } 
     
+module grup_pahare(tip)
+   {
+       if(tip == "cerc")
+           pahare_pe_cerc(nr_pahare=10,raza_cerc=200);
+       else
+           if(tip=="sir")
+          pahare_sir(10); 
+            else   
+                if(tip=="matrice")
+                     pahare_matrice(10,10);
+                else
+                    echo("tip necunoscut");
+           
+       
+       }
 //pahare_matrice(1,1);
-pahare_pe_cerc(nr_pahare=10,raza_cerc=200);
-   
+//pahare_pe_cerc(nr_pahare=10,raza_cerc=200);
+ grup_pahare("matrice");  
    
