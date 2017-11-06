@@ -10,5 +10,5 @@ module roata(raza,grosime,raza_gaura,nr_gauri)
     
     }
 
-rotate([0,0,$t*90]) 
+rotate([0,0,$t*]) 
 roata(raza=100,grosime=10,raza_gaura=10,nr_gauri=10);
